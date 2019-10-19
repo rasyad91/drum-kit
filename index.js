@@ -66,4 +66,11 @@ function makeSound(key) {
 }
 //another method of using addEventListener -.addEventListener('click', function() { alert('clicked');})
 
-//function buttonAnimation(key)
+function buttonAnimation(key) {
+  var activeButton = document.querySelector("." + key);
+  activeButton.classList.add('pressed');
+
+  setTimeout(function() {
+    activeButton.classList.remove('pressed');
+  }, 100);
+}
