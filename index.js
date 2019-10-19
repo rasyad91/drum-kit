@@ -7,5 +7,6 @@ for (var i = 0; i < numberOfDrums; i++){
 // another method of using addEventListener -.addEventListener('click', function() { alert('clicked');})
 
 function handleClick() {
-  alert('clicked');
+  var audio = new Audio('sounds/tom-1.mp3');
+  audio.play();
 }
